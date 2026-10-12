@@ -1,0 +1,60 @@
+/* Print Stylesheet untuk Label Plato Makan & Formulir CPPT STARKES RSUD Provinsi */
+
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 12pt;
+  }
+
+  .sidebar,
+  .top-header,
+  .role-switcher-container,
+  .toast-container,
+  .no-print,
+  .btn,
+  .patient-quick-bar,
+  .tabs-nav {
+    display: none !important;
+  }
+
+  .app-container, .main-content, .page-body {
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  .card {
+    border: 1px solid #ccc !important;
+    box-shadow: none !important;
+    padding: 12px !important;
+    page-break-inside: avoid;
+  }
+
+  /* Specific Plato Label Print Area */
+  .printable-plato-label {
+    width: 90mm !important;
+    min-height: 60mm !important;
+    padding: 8mm !important;
+    border: 2px solid #000 !important;
+    margin: 4mm auto !important;
+    page-break-inside: avoid !important;
+    font-family: Arial, sans-serif !important;
+  }
+
+  /* Specific CPPT Document Print Area */
+  .printable-cppt-document {
+    width: 100% !important;
+    padding: 15mm !important;
+    border: none !important;
+  }
+
+  .print-header {
+    border-bottom: 2px solid #000;
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+}
